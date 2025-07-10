@@ -34,13 +34,6 @@ A full-stack real estate listing web application built using **Django**, designe
 
 ## ⚙️ Project Setup
 
-### 📁 Clone the repository
-
-```bash
-git clone https://github.com/anusenthilkumar/real-estate-django.git
-cd real-estate-django
-```
-
 ### 🐍 Create and activate a virtual environment
 
 ```bash
