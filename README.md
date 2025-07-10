@@ -4,7 +4,6 @@ A full-stack real estate listing web application built using **Django**, designe
 
 ![Python](https://img.shields.io/badge/python-3.10+-blue)
 ![Django](https://img.shields.io/badge/Django-4.x-green)
-![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
 ---
 
@@ -104,20 +103,4 @@ real-estate-django/
 
 ---
 
-## 📝 License
 
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## 🙋‍♀️ Author
-
-**Anu Senthil Kumar**  
-💻 [GitHub Profile](https://github.com/anusenthilkumar)
-
----
-
-## 🌟 Support
-
-If you like this project, leave a ⭐️ on the repo and share it!  
-Issues and pull requests are welcome.
