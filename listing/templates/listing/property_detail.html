@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ property.title }}</title>
+</head>
+<body>
+    <h1>{{ property.title }}</h1>
+    <p><strong>Price:</strong> ₹{{ property.price }}</p>
+    <p><strong>Address:</strong> {{ property.address }}</p>
+    <p><strong>Description:</strong> {{ property.description }}</p>
+
+    {% if property.image %}
+        <img src="{{ property.image.url }}" width="500">
+    {% endif %}
+
+    <br><br>
+    <a href="{% url 'property_list' %}">← Back to Listings</a>
+</body>
+</html>

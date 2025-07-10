@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Available Properties</title>
+    {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    
+    <h1>Available Properties</h1>
+    <form method="GET" action="">
+    <input type="text" name="q" placeholder="Search properties..." value="{{ request.GET.q }}">
+    <button type="submit">Search</button>
+</form>
+
+    {% for property in properties %}
+        <div>
+            <h2><a href="{% url 'property_detail' property.id %}">{{ property.title }}</a></h2>
+            <p><strong>Price:</strong> ₹{{ property.price }}</p>
+            <p><strong>Address:</strong> {{ property.address }}</p>
+            <p>{{ property.description|truncatewords:20 }}</p>
+            {% if property.image %}
+                <img src="{{ property.image.url }}" width="300">
+            {% endif %}
+            <hr>
+        </div>
+    {% empty %}
+        <p>No properties listed yet.</p>
+    {% endfor %}
+</body>
+</html>
